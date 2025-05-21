@@ -8,12 +8,15 @@
 #ifndef ANALYZE_HPP_
 #define ANALYZE_HPP_
 
-class Analyze {
-public:
-    Analyze() = default;
-    ~Analyze() = default;
+#include <iostream>
+#include "../IOperation.hpp"
 
-    void analyze(const char *input_file, int n);
+class Analyze : public IOperation {
+    public:
+        Analyze() = default;
+        ~Analyze() = default;
+
+        bool apply() override { return true; }
 };
 
 #endif /* !ANALYZE_HPP_ */
