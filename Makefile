@@ -9,7 +9,8 @@ NAME	= stone_analysis
 SRC	=	./src/main.cpp \
 		./src/analyze/analyze.cpp \
 		./src/cypher/cypher.cpp \
-		./src/decypher/decypher.cpp
+		./src/decypher/decypher.cpp \
+		./src/FileManager/FileManager.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

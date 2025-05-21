@@ -8,13 +8,15 @@
 #ifndef IOPERATION_HPP_
 #define IOPERATION_HPP_
 
+#include <iostream>
+#include <string>
+#include <vector>
+#include "constants.hpp"
+
 class IOperation {
     public:
-        IOperation();
-        ~IOperation();
-        IOperation(const IOperation &other) = default;
-        IOperation &operator=(const IOperation &other) = default;
-
+        IOperation(char **argv, int argc) {}  // Add inline constructor implementation
+        virtual ~IOperation() = default;
         /*
   ** @brief Apply the operation using the stored attributes.
   ** @return true if the operation was successful, false otherwise.
