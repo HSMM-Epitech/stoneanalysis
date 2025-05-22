@@ -13,8 +13,8 @@
 #include <vector>
 #include <cstdint>
 
-#define FIRST_FREQUENCY 19000;
-#define FREQUENCY_STEP 50;
+#define FIRST_FREQUENCY 19000
+#define FREQUENCY_STEP 50
 
 struct WavHeader {
         char riff[4];  // "RIFF"
