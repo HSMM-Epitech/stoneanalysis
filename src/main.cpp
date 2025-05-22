@@ -29,6 +29,15 @@ MESSAGE The message to hide in the audio file
 N Number of top frequencies to display
 */
 
+bool hasFlag(char **argv, int argc, const std::string &flag) {
+    for (int i = 0; i < argc; ++i) {
+        if (argv[i] == flag) {
+            return true;
+        }
+    }
+    return false;
+}
+
 std::string getUsage() {
     return "Usage: ./stone_analysis [--analyze IN_FILE N | --cypher IN_FILE OUT_FILE MESSAGE | --decypher IN_FILE]\n"
            "IN_FILE An audio file to be analyzed\n"
@@ -41,6 +50,10 @@ int main(int argc, char **argv) {
     if (argc < 2) {
         std::cerr << getUsage() << std::endl;
         return 84;
+    }
+    if (hasFlag(argv, argc, "--help")) {
+        std::cout << getUsage() << std::endl;
+        return 0;
     }
     std::string operation = argv[1];
     std::map<std::string, std::function<IOperation *(char **, int)>> operations = {{"--analyze",

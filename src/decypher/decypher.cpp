@@ -19,7 +19,7 @@ Decypher::Decypher(char **argv, int argc) : IOperation(argv, argc) {
 
 void Decypher::initFreqToChar() {
     int frequency = FIRST_FREQUENCY;
-    std::unordered_map<char, double> charToFreq;
+    std::map<char, double> charToFreq;
 
     for (char c = 'a'; c <= 'z'; ++c) {
         charToFreq[c] = frequency;

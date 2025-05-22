@@ -9,7 +9,7 @@
 #define DECYPHER_HPP_
 
 #include "../IOperation.hpp"
-#include <unordered_map>
+#include <map>
 
 class Decypher : public IOperation {
     public:
@@ -22,7 +22,7 @@ class Decypher : public IOperation {
         std::string filePath;
         std::vector<int16_t> samples;
         WavHeader header;
-        std::unordered_map<double, char> freqToChar;
+        std::map<double, char> freqToChar;
         std::string message;
 
         void initFreqToChar();
