@@ -1,0 +1,55 @@
+### C++ template
+# Prerequisites
+*.d
+
+/assets
+/epi-gifts
+/doc
+*.log
+stone_analysis
+
+.idea
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+*.gcno
+*.gcda
+*.gcov
+/unit_tests
+/nanotekspice
+/build/
+/cmake-build-debug/
+/cmake-build-debug-tests/
+
+# IDE Config
+.vscode
+.ideas
+.idea
