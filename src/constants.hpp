@@ -11,6 +11,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstdint>
 
 #define FIRST_FREQUENCY 19000;
 #define FREQUENCY_STEP 50;
